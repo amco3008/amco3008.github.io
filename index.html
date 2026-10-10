@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inbox Digest</title>
+  <meta name="description" content="Inbox Digest is a personal, read-only Gmail digest tool used only by its owner.">
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.6; max-width: 46rem; margin: 2rem auto; padding: 0 1rem; color: #1f2328; }
+    h1 { margin-bottom: 0.25rem; }
+    .tagline { margin-top: 0; color: #59636e; }
+    footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #d1d9e0; font-size: 0.9rem; color: #59636e; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Inbox Digest</h1>
+    <p class="tagline">A personal, read-only digest of one Gmail inbox, used only by its owner.</p>
+
+    <h2>What it is</h2>
+    <p>
+      Inbox Digest is a small command-line tool that one individual runs on his own computer to keep track of his own
+      Gmail inbox. It is not a public service: there is no sign-up, no account for anyone else, and it is not offered,
+      sold or distributed to other people. Its only user is its owner, signing in with his own Google Account.
+    </p>
+
+    <h2>What it does</h2>
+    <ul>
+      <li>Runs a short list of saved Gmail searches chosen by the owner (for example: receipts, invoices, account notices).</li>
+      <li>For the matching messages, lists the sender, subject and date, so the owner sees what arrived without opening each one.</li>
+      <li>For receipts and invoices the owner selects, reads the message text or the attached PDF invoice and keeps only the
+        lines that show an amount, a billing period or a renewal date, to build a personal record of what he has paid.</li>
+    </ul>
+
+    <h2>What it never does</h2>
+    <ul>
+      <li>It never sends, replies to, deletes, archives, labels or otherwise changes any email. Google access is read-only
+        (the <code>gmail.readonly</code> permission).</li>
+      <li>It never shares, sells or publishes email data, and it never uses it for advertising.</li>
+      <li>It does not run on a server for other people; the digest stays on the owner's own computer.</li>
+    </ul>
+
+    <h2>How access works</h2>
+    <p>
+      The owner grants access once through Google's standard sign-in and consent screen. He can withdraw it at any time
+      from <a href="https://myaccount.google.com/permissions">Google Account → Third-party apps &amp; services</a>.
+    </p>
+
+    <h2>Privacy</h2>
+    <p>
+      How Inbox Digest accesses, uses, stores and deletes Google user data is described in the
+      <a href="privacy.html">Inbox Digest Privacy Policy</a>.
+    </p>
+  </main>
+
+  <footer>
+    <p>
+      <a href="privacy.html">Privacy Policy</a> ·
+      Contact: via the <a href="https://github.com/amco3008/amco3008.github.io/issues">repository issues</a>
+    </p>
+  </footer>
+</body>
+</html>

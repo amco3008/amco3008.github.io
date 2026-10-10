@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy – Inbox Digest</title>
+  <meta name="description" content="How Inbox Digest accesses, uses, stores, shares and deletes Google user data.">
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.6; max-width: 46rem; margin: 2rem auto; padding: 0 1rem; color: #1f2328; }
+    .meta { color: #59636e; }
+    footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #d1d9e0; font-size: 0.9rem; color: #59636e; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Inbox Digest Privacy Policy</h1>
+    <p class="meta">Effective date: 10 October 2026</p>
+
+    <p>
+      <a href="index.html">Inbox Digest</a> is a personal, read-only Gmail digest tool. It is built and used by one
+      individual (the "owner") for his own Gmail account only. It is not offered to the public. This policy explains
+      exactly what Google user data the tool accesses and what happens to it.
+    </p>
+
+    <h2>1. Data accessed</h2>
+    <p>
+      Inbox Digest asks Google for these permissions, and no others:
+    </p>
+    <ul>
+      <li><code>https://www.googleapis.com/auth/gmail.readonly</code> – read-only access to Gmail messages and settings;</li>
+      <li><code>openid</code> and <code>https://www.googleapis.com/auth/userinfo.email</code> – to confirm which Google Account signed in.</li>
+    </ul>
+    <p>Within that read-only access, the tool actually reads:</p>
+    <ul>
+      <li><strong>Message metadata</strong> for messages that match the owner's saved searches: message and thread identifiers,
+        the date received, and the <em>From</em>, <em>Subject</em> and <em>Date</em> headers;</li>
+      <li><strong>Message content, only for receipts and invoices the owner selects</strong>: the text of the message and, when
+        present, the attached PDF invoice, from which it keeps only lines showing an amount, a billing period or a
+        renewal date;</li>
+      <li><strong>The signed-in email address</strong>, to check that the account is the owner's.</li>
+    </ul>
+    <p>
+      Inbox Digest never sends, deletes, archives, labels or modifies email, and it cannot: it holds read-only access.
+    </p>
+
+    <h2>2. How the data is used</h2>
+    <p>
+      The data is used for one purpose: to show the owner a digest of his own inbox (what arrived, from whom, and the
+      amounts on his receipts and invoices) so he can keep track of his own mail and spending. It is not used for
+      advertising, profiling, credit or lending decisions, or any purpose other than that digest.
+    </p>
+
+    <h2>3. Storage</h2>
+    <ul>
+      <li>Everything stays on the owner's own computer. There is no Inbox Digest server and no cloud database.</li>
+      <li>The Google sign-in credential and the digest files are stored in the owner's home directory, readable only by the
+        owner's user account on that computer.</li>
+      <li>Invoice PDFs that the owner chooses to read are cached in a private folder on the same computer.</li>
+      <li>Data is kept only as long as the owner needs it for his own records, and is deleted by him (see section 6).</li>
+    </ul>
+
+    <h2>4. Sharing</h2>
+    <ul>
+      <li>Google user data is <strong>not sold</strong>, not rented and not shared with advertisers, data brokers or any other
+        third party.</li>
+      <li>No other person reads the data. The owner is the only user and the only person who sees the digest.</li>
+      <li>When the owner asks an AI assistant that he uses under his own account to read or summarise part of his digest,
+        the specific lines involved are sent to that assistant's provider to answer that one request. This happens only
+        on the owner's instruction, for his own use.</li>
+      <li>Google user data is not used to create, train or improve any machine-learning or artificial-intelligence
+        model.</li>
+      <li>Data may be disclosed only if required by law.</li>
+    </ul>
+
+    <h2>5. Google API Services User Data Policy</h2>
+    <p>
+      Inbox Digest's use and transfer of information received from Google APIs adheres to the
+      <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+      including the
+      <a href="https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes">Limited Use requirements</a>.
+    </p>
+
+    <h2>6. Deleting data and revoking access</h2>
+    <ul>
+      <li><strong>Revoke access:</strong> open
+        <a href="https://myaccount.google.com/permissions">Google Account → Third-party apps &amp; services</a>, choose
+        Inbox Digest, and remove its access. After that the tool can no longer read any mail.</li>
+      <li><strong>Delete stored data:</strong> the owner deletes the credential file, the digest files and any cached invoice
+        PDFs from his computer. Nothing is held anywhere else, so nothing else needs deleting.</li>
+      <li>If anyone other than the owner has ever granted Inbox Digest access by mistake, write to the contact address
+        below: any data from that account will be deleted and the deletion confirmed by email.</li>
+    </ul>
+
+    <h2>7. This website</h2>
+    <p>
+      These pages are static and hosted on GitHub Pages. They set no cookies and contain no analytics or tracking.
+      GitHub logs the IP address of visitors for security purposes, as described in the
+      <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.
+    </p>
+
+    <h2>8. Changes</h2>
+    <p>
+      If Inbox Digest ever starts using Google user data in a new way, this policy will be updated first, with a new
+      effective date, and access will be re-granted through Google's consent screen before the new use begins.
+    </p>
+
+    <h2>9. Contact</h2>
+    <p>
+      Questions or deletion requests: open an issue on <a href="https://github.com/amco3008/amco3008.github.io/issues">this repository</a> (no personal data in public issues). As the only user, the owner can also revoke access at any time in Google Account → Security → Third-party connections.
+    </p>
+  </main>
+
+  <footer>
+    <p><a href="index.html">Inbox Digest home</a></p>
+  </footer>
+</body>
+</html>
